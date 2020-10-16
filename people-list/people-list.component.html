@@ -1,0 +1,24 @@
+<!-- Assignment Question 1 output -->
+<h3>Question 1 output</h3>
+<p>Using json for people as in question no.1</p>
+<table border="1" style="border-collapse:collapsed">
+    <tr><th>name</th><th>age</th><th>gender</th></tr>
+    <tr *ngFor="let per of people">
+       <td>{{ per.name }}</td>
+       <td>{{ per.age }}</td>
+       <td>{{ per.gender }}</td>
+    </tr>
+ </table>
+
+
+<!-- Assignment Question 2 output -->
+<h3>Question 2 output</h3>
+<p>Done using a Model1.ts file and separate module and people class</p>
+<table border="1" style="border-collapse:collapsed">
+    <tr><th>name</th><th>age</th><th>gender</th></tr>
+    <tr *ngFor="let per of getAllPeople()">
+       <td>{{ per.name }}</td>
+       <td>{{ per.age }}</td>
+       <td>{{ per.gender }}</td>
+    </tr>
+ </table>
