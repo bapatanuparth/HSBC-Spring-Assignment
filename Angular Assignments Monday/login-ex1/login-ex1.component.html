@@ -1,0 +1,12 @@
+<form  #myform="ngForm" (ngSubmit)="onsubmit(myform)">
+    <input name="uname" placeholder="Enter name" ngModel><br>
+    <input name="password" type="password" placeholder="Enter password" ngModel><br>
+    <input type="submit" value="submit" ><br>
+    </form>
+    
+    <div *ngIf="valid">
+        Valid User : 
+        {{user |json}}
+    </div>
+
+  
