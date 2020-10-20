@@ -1,0 +1,13 @@
+<form  #myform="ngForm" (ngSubmit)="onsubmit(myform)">
+    <input name="cust" placeholder="Enter customer Id" [(ngModel)]="cust"><br>
+    <input type="submit" value="submit" ><br>
+</form>
+
+<div *ngIf="valid">
+Customer Id: {{custobj.custId}}<br><br>
+Customer name: {{custobj.cname}}<br><br>
+Customer AccId: {{custobj.accId}}<br><br>
+Customer address:    {{custobj.address}}<br><br>
+Balance:  {{custobj.bal}}<br><br>
+
+</div>
